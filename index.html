@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="curriculo.css">
+
+</head>
+<body>
+    <header class="cabecalho"> 
+
+
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__informacoes"></section>
+            
+            <h1 class="apresentacao__informacoes__titulo" >Informações</h1>
+                 <br>
+        
+            
+                <P class="apresentacao__informacoes__texto">
+                <span class="apresentacao__informacoes__texto__destaque
+                " >Nome:</span> Bruno Lopes Gomes <br>
+                <span class="apresentacao__informacoes__texto__destaque
+                " >Nacionalidade:</span> Brasileiro <br>
+                <span class="apresentacao__informacoes__texto__destaque
+                " >Endereço:</span> Av Wenceslau Bras 452 vila popular <br>
+                <span class="apresentacao__informacoes__texto__destaque
+                " >Email:</span> bruno.lgs25@gmail.com <br>
+
+                </P>
+
+            <h1  class="apresentacao__informacoes__titulo">  
+              Experiências
+
+            </h1>
+            <br>
+                <p class="apresentacao__informacoes__texto">
+                        
+                    <i class="apresentacao__informacoes__texto__destaque" >DD Maquinas </i>— <code>Logística e Conferência</code> <br><br>
+                    Atuei principalmente no setor de Conferência, onde separávamos e conferíamos os produtos para suas plataformas, atuei também na área de logística e no setor de embalagens dos produtos. <br><br>
+                    <i class="apresentacao__informacoes__texto__destaque" >Universal Chemical</i> — <code>Fabrica de cosméticos</code><br><br>
+                    Atuei na área de envase de cosmeticos, sendo um auxiliar de produção.
+                    
+
+                </p>
+
+        </section>
+
+        <section class="formacoes" >
+            <h2 class="formacao__titulo">
+            
+            Formação Front-End
+            
+            </h2>
+            <!-- Slider main container -->
+            <h3 class="titulo__swiper">HTML CSS</h3>
+            <div class="swiper">
+                
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="imagens/certificado01.png" alt="imagem certificado"></div>
+                  <div class="swiper-slide"><img src="imagens/certificado02.png" alt="imagem certificado"></div>
+                  <div class="swiper-slide"><img src="imagens/certificado03.png" alt="imagem certificado"></div>
+                  <div class="swiper-slide"><img src="imagens/certificado04.png" alt="imagem certificado"></div>
+                  <div class="swiper-slide"><img src="imagens/certificado05.png" alt="imagem certificado"></div>
+                  <div class="swiper-slide"><img src="imagens/certificado06.png" alt="imagem certificado"></div>
+                  ...
+                </div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+        </section>
+       
+    </main>
+
+    <footer class="rodape">
+     <div class="rodape__conteudo" ></div>
+     <p class="rodape__conteudo__texto" > Desenvolvido Por Bruno Lopes</p>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        slidesPerView: 3,   
+        spaceBetween:0,
+
+        navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+        },
+    
+    pagination : {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        },
+
+      breakpoints:{
+
+        1440:{
+            slidesPerView:3
+        },
+
+        1024:{
+            slidesPerView:2
+
+
+        },
+
+        768:{
+            slidesPerView: 2,
+            spaceBetween: 0
+        },
+        
+        425:{
+            slidesPerView: 1,
+            spaceBetween: 0
+
+
+        },
+        320:{
+            slidesPerView: 1,
+            spaceBetween: 0
+
+
+        }
+
+
+      }
+});
+
+
+
+    </script>
+</body>
+</html>
